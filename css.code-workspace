@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../PORTFOLIO/css"
+		},
+		{
+			"path": "../PORTFOLIO/js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css"
+	}
+}

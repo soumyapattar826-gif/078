@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Soumya G Pattar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Small page-specific adjustments */
+        .resume-header { display:flex; align-items:center; gap:20px; }
+        .resume-photo { width:110px; height:110px; border-radius:8px; object-fit:cover; border:2px solid #ccc }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+    </header>
+
+    <nav class="navigation">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="biodata.html">Bio-Data</a>
+    </nav>
+
+    <main class="content fade-in" id="resume-content">
+        <section class="card">
+            <div class="resume-header">
+                <img src="profile.jpg" alt="Photo" class="resume-photo" onerror="this.style.display='none'">
+                <div>
+                    <h2>Soumya Pattar</h2>
+                    <p><strong>Computer Science & Engineering</strong> — Maratha Mandal Engineering College, Belagavi</p>
+                    <p><strong>USN:</strong> 2MM23CS078</p>
+                    <p>Email: <em><a href="mailto:soumyapattar826@gmail.com">soumyapattar826@gmail.com</a></em> | Phone: <em>+91-8073861796</em></p>
+                    <p><strong>Father:</strong> Gangadhar &nbsp; | &nbsp; <strong>Mother:</strong> Lalitha Pattar</p>
+                    <p><strong>Date of Birth:</strong> 28/09/2005 &nbsp; | &nbsp; <strong>Gender:</strong> Female</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Professional Summary</h3>
+            <p>Motivated Computer Science student with hands-on experience in web development, problem-solving, and collaborative projects. Skilled in JavaScript, HTML, CSS and eager to grow in software engineering roles.</p>
+
+            <h3>Education</h3>
+            <ul>
+                <li><strong>B.E. in Computer Science</strong>, Maratha Mandal Engineering College, Belagavi — (Year - Present)</li>
+                <li><strong>PU:</strong> Tungal PU College, Jamakhandi</li>
+                <li><strong>10th:</strong> DHBS School, Athani</li>
+            </ul>
+
+            <h3>Skills</h3>
+            <p>JavaScript, HTML, CSS, jQuery, Git, Responsive Design, Problem Solving, Basic Algorithms</p>
+
+            <h3>Projects</h3>
+            <ul>
+                <li><strong>Portfolio Website</strong> — Personal site with resume, bio, and downloadable content (HTML/print).</li>
+                <li><strong>Project Name</strong> — Short description of the project and tech used.</li>
+            </ul>
+
+            <h3>Experience</h3>
+            <p>Internships, part-time roles, or notable contributions. If none, include relevant academic projects.</p>
+
+            <h3>Certifications & Achievements</h3>
+            <p>List relevant certificates and any awards.</p>
+
+            <div>
+                <button class="download-btn" id="download-resume">Download Resume (HTML)</button>
+                <button class="download-btn" id="print-resume">Download as PDF (Print)</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

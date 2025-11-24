@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+}
+
+header {
+    background: #1f2937;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.home-container, .content {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-box {
+    padding: 20px;
+}
+
+/* Center the home container vertically and horizontally */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 90px);
+}
+
+.profile-info { margin-top: 8px; }
+.profile-info .item { margin: 6px 0; }
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 14px;
+    border: 3px solid rgba(0,0,0,0.06);
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    object-fit: cover;
+}
+
+.btn-group, .navigation {
+    margin-top: 25px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #16a34a;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background: #15803d;
+}
+
+/* Fade animation */
+.fade-in {
+    animation: fadeAnimation 1.3s ease-in-out;
+}
+
+@keyframes fadeAnimation {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* General card layout */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(31,41,55,0.08);
+    padding: 22px;
+    margin: 12px auto;
+    text-align: left;
+    max-width: 900px;
+}
+
+/* Staggered fade for items inside profile box */
+.profile-box .item { animation: fadeAnimation 0.9s ease both; }
+.profile-box .item:nth-child(1) { animation-delay: 0s; }
+.profile-box .item:nth-child(2) { animation-delay: 0.06s; }
+.profile-box .item:nth-child(3) { animation-delay: 0.12s; }
+.profile-box .item:nth-child(4) { animation-delay: 0.18s; }
+.profile-box .item:nth-child(5) { animation-delay: 0.24s; }
+.profile-box .item:nth-child(6) { animation-delay: 0.30s; }
+
+.content h2, .content h3 { margin-top: 12px; color: #0f172a; }
+.content p, .content li { color: #334155; line-height: 1.45; }
+
+.navigation { text-align:center; margin: 18px 0; }
+
+@media (max-width: 720px) {
+    .home-container, .content { width: 94%; }
+    .profile-img { width: 120px; height:120px }
+    .resume-header { flex-direction: column; align-items:flex-start }
+}
+
+/* Print-friendly adjustments */
+@media print {
+    body { background: white; }
+    header, .navigation, .btn, .download-btn { display: none !important; }
+    .card { box-shadow: none; border: none; }
+}
